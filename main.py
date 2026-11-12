@@ -333,7 +333,7 @@ def details(state: State) -> Page:
 @route
 def saved_calculations(state: State) -> Page:
     """Displays the user's saved calculations."""
-    page_content = [
+    page_content: list[PageContent] = [
         Header("Saved Calculations")
     ]
 
